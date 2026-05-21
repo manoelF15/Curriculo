@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PWEB1 — Cap. 05 — AT05 — Pesquisa Acadêmica</title>
+</head>
+<body>
+
+<header>
+  <h1>AT05 — Pesquisa Acadêmica</h1>
+  <p><a href="index.html">← Voltar para a página principal</a></p>
+</header>
+
+<main>
+  <p>* Campos obrigatórios</p>
+  <form action="https://httpbin.org/post" method="post" novalidate>
+
+    <!-- Fieldset 1: Perfil do estudante -->
+    <fieldset>
+      <legend>Perfil do estudante</legend>
+
+      <label for="nome">Nome completo: *</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="matricula">Matrícula (7 dígitos): *</label>
+      <input type="text" id="matricula" name="matricula" pattern="\d{7}" required>
+
+      <label for="email">E-mail institucional: *</label>
+      <input type="email" id="email" name="email" aria-describedby="erro-email"
+             aria-required="true" aria-invalid="false" onblur="validarEmail(this)">
+      <p id="erro-email" role="alert"></p>
+
+      <label for="periodo">Período:</label>
+      <select id="periodo" name="periodo">
+        <option value="1">1º</option>
+        <option value="2">2º</option>
+        <option value="3">3º</option>
+        <option value="4">4º</option>
+        <option value="5">5º</option>
+        <option value="6">6º</option>
+        <option value="7">7º</option>
+        <option value="8">8º</option>
+      </select>
+
+      <fieldset>
+        <legend>Turno</legend>
+        <label><input type="radio" name="turno" value="manha"> Manhã</label>
+        <label><input type="radio" name="turno" value="tarde"> Tarde</label>
+        <label><input type="radio" name="turno" value="noite"> Noite</label>
+      </fieldset>
+    </fieldset>
+
+    <!-- Fieldset 2: Perfil tecnológico -->
+    <fieldset>
+      <legend>Perfil tecnológico</legend>
+
+      <label>Tecnologias que conhece:</label>
+      <label><input type="checkbox" name="tecnologias[]" value="html"> HTML</label>
+      <label><input type="checkbox" name="tecnologias[]" value="css"> CSS</label>
+      <label><input type="checkbox" name="tecnologias[]" value="js"> JavaScript</label>
+      <label><input type="checkbox" name="tecnologias[]" value="python"> Python</label>
+      <label><input type="checkbox" name="tecnologias[]" value="java"> Java</label>
+      <label><input type="checkbox" name="tecnologias[]" value="csharp"> C#</label>
+      <label><input type="checkbox" name="tecnologias[]" value="sql"> SQL</label>
+      <label><input type="checkbox" name="tecnologias[]" value="git"> Git</label>
+
+      <label for="linguagem">Linguagem favorita:</label>
+      <select id="linguagem" name="linguagem">
+        <optgroup label="Paradigma Imperativo">
+          <option value="c">C</option>
+          <option value="java">Java</option>
+        </optgroup>
+        <optgroup label="Paradigma Funcional">
+          <option value="haskell">Haskell</option>
+          <option value="elixir">Elixir</option>
+        </optgroup>
+      </select>
+
+      <label for="anos_exp">Anos de experiência:</label>
+      <input type="number" id="anos_exp" name="anos_exp" min="0" max="30">
+
+      <label for="portfolio">Portfólio / LinkedIn:</label>
+      <input type="url" id="portfolio" name="portfolio" placeholder="https://">
+    </fieldset>
+
+    <!-- Fieldset 3: Avaliação da disciplina -->
+    <fieldset>
+      <legend>Avaliação da disciplina</legend>
+
+      <label for="nota">Nota da disciplina:</label>
+      <input type="range" id="nota" name="nota" min="0" max="10" value="5" 
+             oninput="document.getElementById('valor-nota').textContent = this.value">
+      <span id="valor-nota">5</span>/10
+
+      <fieldset>
+        <legend>Satisfação com o material didático</legend>
+        <label><input type="radio" name="satisfacao" value="muito_satisfeito"> Muito satisfeito</label>
+        <label><input type="radio" name="satisfacao" value="satisfeito"> Satisfeito</label>
+        <label><input type="radio" name="satisfacao" value="neutro"> Neutro</label>
+        <label><input type="radio" name="satisfacao" value="insatisfeito"> Insatisfeito</label>
+        <label><input type

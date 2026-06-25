@@ -31,13 +31,14 @@ input, select, textarea {
 }
 
 .botao {
+  display: block;
   width: 100%;
   padding: 10px;
+  text-align: center;
   background-color: blue;
   color: white;
-  border: none;
+  text-decoration: none;
   border-radius: 10px;
-  cursor: pointer;
 }
 
 .rodape {

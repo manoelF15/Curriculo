@@ -29,7 +29,6 @@ input, select, textarea {
   padding: 6px;
   margin-top: 5px;
 }
-
 .botao {
   display: block;
   width: 100%;
@@ -40,17 +39,6 @@ input, select, textarea {
   text-decoration: none;
   border-radius: 10px;
 }
-.voltar {
-   display: block;
-  width: 100%;
-  padding: 10px;
-  text-align: center;
-  background-color: blue;
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-}
-
 .rodape {
   text-align: center;
   padding: 10px;

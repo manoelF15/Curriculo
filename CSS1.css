@@ -38,6 +38,14 @@ input, select, textarea {
   color: white;
   text-decoration: none;
   border-radius: 10px;
+  border: none;
+  font: inherit;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .rodape {
   text-align: center;

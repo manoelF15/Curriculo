@@ -3,55 +3,61 @@
 <html>
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>Meu Portifolio</title>
+  <title>Portifólio | Manoel Francisco</title>
    <link rel="stylesheet" href="Curriculo.css">
 </head>
 <body>
-  <div>
-     <h1>
-        Portifolio
-     </h1>
-    <p><strong>Nome:</strong>Manoel Fransciso Barros dos Santos Alves</p>
-     <p><strong>Estudante do ifal - campus maceio</strong></p>
-     <p><strong>idade:</strong>16 anos</p>
-    <p><strong>Data de nascimento:</strong>21/03/2010</p>
-    <img src="Imagem.jpg" width="200px" height="200px">
-  </div>
+  
+  <header class="cabecalho">
+      <div class="conteiner-cabecalho">    
+        <img src="Imagem.jpg" alt="Minha foto" class="foto-perfil">
+      
+        <div class="Dados-cabecalho">
+          <h1>Manoel Francisco B. S. Alves</h1>
+          <p class="subtitulo"><strong>Estudante do Ifal - Campus Maceió | 16 anos</strong></p>
+        </div>
+      </div>
+  </header>      
+        
+  <main class="container"
   
   
-  
-  <div>
+  <section id="sobre" class="card">
     <h2>Sobre mim</h2>
-    <p>Sou uma pessoal tranquila, quero aprender coisas novas e me tornar uma pessoa melhor</p>
-    <p>estou aprendendo: </p>
-    <ul>
-      <li>HTML</li>
-      <li>java script</li>
+    <p>Sou uma pessoa tranquila, quero aprender coisas novas e me tornar uma pessoa melhor</p>
+    <h3>estou aprendendo: </h3>
+   
+    <ul class="habilidades">
+      <li><span class="H-html">HTML</span></li>
+      <li><span class="H-JS">Java Script</span></li>
+      <li><span class="H-CSS">CSS</span></li>
     </ul>
     
-    <h2>Coisas q eu gosto</h2>
-    <ul>
-      <li>Musica</li>
-      <li>jogos</li>
-      <li>arte</li>
-    </ul>
-  </div>
-  <div>
-  <h2>Planos para o futuro</h2>
-    <p>pretendo entrar numa faculdade cursando engenharia da computação</p>
+ <section class="Grid-Duplo">
+   <div class="card">    
+      <h2>Coisas q eu gosto</h2>
+      <ul>
+        <li>Musica</li>
+        <li>jogos</li>
+        <li>arte</li>
+      </ul> 
+   </div>
+    
+   <div class="card">
+      <h2>Planos para o futuro</h2>
+    <p>pretendo entrar numa faculdade cursando <strong>engenharia da computação</strong></p>
     <h3>sobre meu curso</h3>
     
-    
     <a href="https://www2.ifal.edu.br/campus/maceio/ensino/cursos/tecnicos-integrados/desenvolvimento-de-sistemas"
-      target="_blank">Abrir site do ifal</a>
-
-<h2><strong>Contatos</strong></h2>
-    <p><strong>Email:</strong>mfbsa1@aluno.ifal.edu.br</p>
+      target="_blank" class="site-Ifal">Abrir site do ifal</a>
+   </div>
+ </section>
     
-     <div>
-
-<nav aria-label="Atividades do Capítulo 4">
-  <h2>Capítulo 4 — Tabelas, Listas e Mídia</h2>
+ <section class="card">
+   <h2>Atividades</h2>
+   
+   <div class="Aulas">
+  <h3>Capítulo 4 — Tabelas, Listas e Mídia</h3>
   <ul>
     <li>
       <a href="at01.html">
@@ -74,65 +80,60 @@
       </a>
     </li>
   </ul>
-</nav>
+   </div>
 
-</div>
-<div>
-
-  <h2>Capítulo 5 — Formulários HTML</h2>
-
-  <nav aria-label="Atividades do Capítulo 5">
+  <div class="Aulas">
+  <h3>Capítulo 5 — Formulários HTML</h3>
     <ul>
       <li>
         <a href="At01.html">
           AT01 — Formulário de Contato
         </a>
       </li>
-
       <li>
         <a href="At02.html">
           AT02 — Cadastro de Usuário
         </a>
       </li>
-
       <li>
         <a href="At03.html">
           AT03 — Matrícula Acadêmica
         </a>
       </li>
-
       <li>
         <a href="At04.html">
           AT04 — Inscrição em Evento
         </a>
       </li>
-
       <li>
         <a href="At05.html">
           AT05 — Pesquisa Acadêmica
         </a>
       </li>
     </ul>
-  </nav>
-
-</div>
-<div>
-<h2>Capítulo 7 - Atividade CSS 1</h2>
+    </div>
+   
+<div class="Aulas">
+<h3>Capítulo 7 - Atividade CSS 1</h3>
+    <ul>
+       <li>
+         <a href="CSS1.html">
+            AT01 - CSS
+       </li>
+       <li>
+         <a href="AT01CSS.html">
+            AT02 - CSS
+        </li>
+    </ul> 
+  </div>
+    </section>
   
-<nav aria-label="Atividades do Capítulo 6">
-<ul>
-  <li>
-    <a href="CSS1.html">
-      AT01 - CSS
-  </li>
-  <li>
-    <a href="AT01CSS.html">
-      AT02 - CSS
-  </li>
-</ul>
-</nav>
+  <section id="contato" class="card-contato">
+    <h2><strong>Contatos</strong></h2>
+    <p><strong>Email:</strong>mfbsa1@aluno.ifal.edu.br</p>
+  </section>
   
-</div>
-    
+</main>
+ 
 </body>
 </html>

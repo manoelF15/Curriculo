@@ -51,6 +51,12 @@ ul {
     padding-left: 0.5rem;
 }
 
+.Aulas ul {
+  display: grid;
+  grid-template-column: 1fr;
+  gap: 0;
+}
+
 li::before {
     content: "• ";
     color: #7c3aed;
